@@ -1,0 +1,111 @@
+
+
+  cat > filename                = to craete file
+  touch filename                = to create aempty file
+  vi filename                   = to create a file/modify/edit
+  cat filename                  = to viw the file content
+  cat >> filename               = to append the lines in file
+  mkdir dirname                 = to create a dir
+  mkdir -p dirnames             = to crate a dir recursively
+  pwd                           = to know present working dir
+  cd dirname                    = to move one dir to another dir
+  ls                            = to list the contents in dir/file
+  cd ..                         = to move one dir back
+  cd                            = directly go to home from any dir
+  rm filename                   = to remove a file
+  rmdir dirname                 = to remove a empty dir
+  rm -rf dirname                = to remove a non-empty dir
+  ls dirname                    = to list the perticular dir
+  ls -a                         = to viw the hidden files/dirs
+  mkdir .dirname                = to create a hidden dir
+  touch .filename               = to create a hidden file
+  ls -s                         = to display the content with size
+  ls -lt                        = to display the content with time of creation 
+  ls -lrt                       = to display the content with reverse time of creation 
+  ls -ld                        = to view the permissions of afile
+  ls -ld dir/filename           = to veiw the permissions of perticular dir/file
+  chmod numbers dir/filename    = to change the permissions of a file/dir
+  /etc/passwd                   = all the users information 
+  /etc/passwd                   = all the group information 
+  /etc/shadow                   = all the password information of users
+  useradd username              = to create a new user
+  chown usrname file/dirname    = to change the ownership of a file/dir
+  userdel username              = to delete a user
+  groupadd groupname            = to create a new group
+  chgrp grpname file/dirname    = to change the group membership of a file/dir
+  groupdel grpname              = to delete a group
+  
+  ###############################################################################
+  
+  head -n filename               = to view the first few lines of a file
+  tail -n filename               = it calculates the no.of lines, char, words in that file
+  wc -l filename                 = it calculates only no.of lines in that file
+  wc -w filename                 = it calculates only no.of char in that file
+  cut -cn filename               = it cuts and display the char we have given
+  cut -c1-n filename             = it cuts and display the block of chars which we have given  
+  cut -fn -d: filename           = it cuts the field and display which we have given
+  cut -f1-n -d: filename         = it cuts and display the block of fields which we have given
+  diff file1name file2name       = it display the two different lines in that fies
+  sdiff file1name file2name      = it display the two files side by side
+  cmp file1name file2name        = it compares two fies char by char
+  uniq filename                  = it display on unique lines in the file not duplicate lines
+  uniq -d filename               = it displays only duplicate lines in file
+  uniq -D filename               = it displays how many duplicates are there in file
+  tr '[a-z]' '[A-Z]' <filename   = it translate the char samll to capital in file
+  more filename                  = it is used to scroll a file page by page and line by line
+  sort filename                  = it is used to sort the content in file in alphabetaical order
+  sort -r filename               = it is used to sort the content in reverse order
+  grep 'word' filename           = it is used to search a word/pattren/string in a file
+  grep -v 'word' filename        = it is used to exclude the word we have given and dispaly
+  grep ^'word' filename          = it is used to search a word starting
+  grep 'word'$ filename          = it is used to search a word ending
+  grep -wc 'word' filename       = it is used to search and count how many word are there
+  grep -n 'word' filename        = it is  used to search and count how many lines containing that word
+  sed -n 'np' filename           = it is used to display a perticular line in a file
+  sed -n '1, np' filename        = it is used to display multiple line also which we want
+  sed 'nd' filename              = it is used to elemenate the line and display rest of lines
+  sed '1, nd' filename           = it is used to elemenate the lines and display rest of lines 
+  find / -name filename          = it is used to find files by name
+  find / -size -100M             = it is used to find files by size less than 100MB
+  find / -perm 666               = it is used to find files by permissions
+  find / -ctime (days ago)       = it is used to find files by accessing of time 
+  find / -mtime (days ago)       = it is used to find files by modify of time
+  find / -cmin mins              = it is used to find files by time in minutes
+  find / -amin mins              = it is used to find files by accessing in minutes
+  find / -mmin mins              = it is used to find files by modify in minutes
+  man find                       = to see all commands of find
+  awk -F: '{print $n}' <filename = to cut and display
+  
+  ##############################################################################################
+  
+  wget url = to download anything from internet
+  rpm -ivh pkgname                = to install the package (rpm)
+  rpm -q pkgname                  = to see the pkg whether it installed or not
+  rpm -qi pkgname                 = to see all information about the pkg
+  rpm -ql pkgname                 = to see all the files in pkg
+  rpm -qr pkgname                 = to see all the dependencies of that pkg
+  rpm -qa                         = to see all the installed pkgs in linux
+  rpm -e pkgname                  = to remove a package
+  yum install pkgname             = to install the pkg (yum)
+  yum update pkgname              = to update the pkg
+  yum remove pkgname              = to remove the pkg 
+  yum list installed              = to see all installed pkgs in linux
+  systemctl start servicename     = to start the servicename
+  systemctl stop servicename      = to stop the servicename
+  systemctl status servicename    = to see the status of a servicename
+  netstat -r                      = to see the rout table information 
+  ps -ef                          = to see the process information of our system
+  ps -ef | grep servicename       = to see the process information of a perticular file
+  kill -9 pid                     = to kill the process
+  pkill -9 servicename            = to kill the process
+   
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
